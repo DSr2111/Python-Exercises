@@ -20,4 +20,12 @@ def partition(lst, fn):
         [['hi', 'bye'], [None, 6]]
     """
 
-    
+    true_list = []
+    false_list = []
+
+    for val in lst:
+        if fn(val):
+            true_list.append(val)
+        else:
+            false_list.append()
+    return [true_list, false_list]
